@@ -16,3 +16,7 @@ So behind the scenes, what this does is to apply a few optimization techniques.
 -> So first of all, it will actually prefetch all the routes that are linked on a certain page, even though that only works in production. So we cannot see that happening here in development. 
 -> What also happens is that each page is downloaded separately as a separate chunk, which will also improve performance again. 
 -> And finally, each page that we visit in the browser will actually be cached right in the browser as well. So it will be stored there temporarily. And then as we move around, all these pages will not have to be refetched again.
+
+# 3. Creating a Layout
+
+The RootLayout (in layout.js) will wrap the entire application, so it will apply to every single route in the app. Therefore, it needs to contain the "html" and "body" tag.
