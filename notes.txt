@@ -1,0 +1,8 @@
+# 1. Defining Routes and Pages
+
+In NexJS in order to define a route, we need to create folder/file in the "app" folder, and by convention to name it "page.js".
+
+Each Page in NextJS is simply a React component that we export from a "page.js" file which needs to be in some folder.
+
+rootURL/cabins/cabin - the "cabin" is a page in the "cabins". 
+So the nested folder structure is: app folder -> cabins folder (page.js) -> cabin folder (page.js)
