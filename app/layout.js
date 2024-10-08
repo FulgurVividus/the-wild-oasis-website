@@ -14,7 +14,7 @@ function RootLayout({ children }) {
           <Navigation />
         </header>
         <main>{children}</main>
-        <footer>Copyright by The Wild Oasis</footer>
+        <footer>Copyright by The Wild Oasis.</footer>
       </body>
     </html>
   );
