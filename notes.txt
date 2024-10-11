@@ -28,3 +28,9 @@ All the logs in NextJS will appear in the terminal.
 # 5. Adding Interactivity with Client Components
 
 No matter what the component is, would it be client or server, all the components are initially rendered on the server.
+
+# 6. Displaying a Loader Indicator
+
+loading.js - is a global loader cause this one will actually apply to any page in the app, no matter how deeply the routes are nested.
+
+With the loading file we can display an instant loading state that will be immediately rendered on the server while the content of route loads.
