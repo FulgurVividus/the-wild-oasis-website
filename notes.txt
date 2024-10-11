@@ -20,3 +20,7 @@ So behind the scenes, what this does is to apply a few optimization techniques.
 # 3. Creating a Layout
 
 The RootLayout (in layout.js) will wrap the entire application, so it will apply to every single route in the app. Therefore, it needs to contain the "html" and "body" tag.
+
+# 4. Fetching data in a Page
+
+All the logs in NextJS will appear in the terminal.
