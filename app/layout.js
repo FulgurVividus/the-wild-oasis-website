@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 
 export const metadata = {
   title: "The Wild Oasis",
+  description: "The Wild Oasis Website",
 };
 
 function RootLayout({ children }) {
@@ -14,7 +15,7 @@ function RootLayout({ children }) {
           <Navigation />
         </header>
         <main>{children}</main>
-        <footer>Copyright by The Wild Oasis</footer>
+        <footer>© Copyright by The Wild Oasis</footer>
       </body>
     </html>
   );
