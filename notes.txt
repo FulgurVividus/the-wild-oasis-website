@@ -24,3 +24,7 @@ The RootLayout (in layout.js) will wrap the entire application, so it will apply
 # 4. Fetching data in a Page
 
 All the logs in NextJS will appear in the terminal.
+
+# 5. Adding Interactivity with Client Components
+
+No matter what the component is, would it be client or server, all the components are initially rendered on the server.
