@@ -42,3 +42,10 @@ In the (app => layout.js) file, the "title => template" has %s. So this %s will 
 # 8. Adding a favicon
 
 Just import the image file to the "app" folder and it will be automatically used as a favicon. Name it "icon.format".
+
+# 9. Loading Fonts
+
+3 steps (app folder => layout.js):
+-> import the name of fonts from Google Fonts
+-> configure 
+-> import className in the className of html tag where you wanna apply the font
