@@ -34,3 +34,11 @@ No matter what the component is, would it be client or server, all the component
 loading.js - is a global loader cause this one will actually apply to any page in the app, no matter how deeply the routes are nested.
 
 With the loading file we can display an instant loading state that will be immediately rendered on the server while the content of route loads.
+
+# 7. Adding a Page Metadata
+
+In the (app => layout.js) file, the "title => template" has %s. So this %s will get replaced with whatever title we export from individual pages.
+
+# 8. Adding a favicon
+
+Just import the image file to the "app" folder and it will be automatically used as a favicon. Name it "icon.format".
