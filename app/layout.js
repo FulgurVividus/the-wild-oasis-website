@@ -21,7 +21,7 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col`}
+        className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative`}
       >
         <Header />
         <section className="flex-1 px-8 py-12">
