@@ -49,3 +49,12 @@ Just import the image file to the "app" folder and it will be automatically used
 -> import the name of fonts from Google Fonts
 -> configure 
 -> import className in the className of html tag where you wanna apply the font
+
+# 9. Optimizing Images with NextJS <Image /> component
+
+It does 3 things:
+-> it'll automatically server the correctly sized images in modern formats (it'll do it if necessary)
+-> prevents the layout shifts (it forces us to specify the exact height and width)
+-> it'll automatically lazy load the images
+
+NOTE: if we import the image file into the component, then we don't have to specify the height and width. On these kinda staticly imported images, we can specify some other optional attributes like "quality" and "priority". (example: _components folder => Logo.js)
