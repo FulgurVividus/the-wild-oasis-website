@@ -50,7 +50,7 @@ Just import the image file to the "app" folder and it will be automatically used
 -> configure 
 -> import className in the className of html tag where you wanna apply the font
 
-# 9. Optimizing Images with NextJS <Image /> component
+# 10. Optimizing Images with NextJS <Image /> component
 
 It does 3 things:
 -> it'll automatically serve the correctly sized images in modern formats (it'll do it if necessary)
@@ -60,3 +60,9 @@ It does 3 things:
 NOTE: if we import the image file into the component, then we don't have to specify the height and width. On these kinda staticly imported images, we can specify some other optional attributes like "quality" and "priority". (example: _components folder => Logo.js)
 
 In the (app folder => Page.js) file, we can use "fill" property to make image fill the entire space. The "placeholder" property on the image works only if image is staticly imported.
+
+# 11. Adding a Nested Layout
+
+If we wanna add a Nested Layout to just one part of the site (below one URL segment), we need to create a layout.js file right inside that folder. (example: account folder => layout.js)
+
+This layout.js will be then applied to the page.js (account folder => page.js) that is inside "account" folder. And then just as always all the nested pages inside
