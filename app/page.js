@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import bg from "@/public/bg.png";
 
-export default function Page() {
+function Page() {
   return (
     <>
       <main className="mt-24">
@@ -32,3 +32,5 @@ export default function Page() {
     </>
   );
 }
+
+export default Page;
