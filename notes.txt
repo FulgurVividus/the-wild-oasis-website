@@ -5,7 +5,7 @@ In NexJS in order to define a route, we need to create folder/file in the "app" 
 Each Page in NextJS is simply a React component that we export from a "page.js" file which needs to be in some folder.
 
 rootURL/cabins/cabin - the "cabin" is a page in the "cabins". 
-So the nested folder structure is: app folder -> cabins folder (page.js) -> cabin folder (page.js)
+So the nested folder structure is: app/cabins/cabin/(page.js)
 
 # 2. Navigation between pages
 
@@ -57,18 +57,24 @@ It does 3 things:
 -> prevents the layout shifts (it forces us to specify the exact height and width)
 -> it'll automatically lazy load the images
 
-NOTE: if we import the image file into the component, then we don't have to specify the height and width. On these kinda staticly imported images, we can specify some other optional attributes like "quality" and "priority". (example: _components folder => Logo.js)
+NOTE: if we import the image file into the component, then we don't have to specify the height and width. On these kinda staticly imported images, we can specify some other optional attributes like "quality" and "priority". (example: app/_components/Logo.js)
 
 In the (app folder => Page.js) file, we can use "fill" property to make image fill the entire space. The "placeholder" property on the image works only if image is staticly imported.
 
 # 11. Adding a Nested Layout
 
-If we wanna add a Nested Layout to just one part of the site (below one URL segment), we need to create a layout.js file right inside that folder. (example: account folder => layout.js)
+If we wanna add a Nested Layout to just one part of the site (below one URL segment), we need to create a layout.js file right inside that folder. (example: app/account/layout.js)
 
-This layout.js will be then applied to the page.js (account folder => page.js) that is inside "account" folder. And then just as always all the nested pages inside
+This layout.js will be then applied to the page.js (app/account/page.js) that is inside "account" folder. And then just as always all the nested pages inside
 
 # 12. Async and await in server components
 
 They can be directly used not only in the pages, but also in any server components.
 
-Moving data-fetching to its own component, in NextJS it's a good practice to do. We should get used to always have the data-fetching as close as possible to the place that actually needs that data. Because by doing so, we can implement more granular data-fetching strategies.
+Moving data-fetching to its own component, in NextJS it's a good practice to do. We should get used to always have the data-fetching as close as possible to the place that actually needs that data. Because by doing so, we can implement more granular data-fetching strategies. (example: app/cabins/page.js)
+
+# 12. Dynamic Route Segments
+
+In a folder, we can create a folder with the name of the segment that we wanna use dynamically in the URL. And then we can create a page inside that folder. The name of this folder must be in brackets => [folder_name] (example: app/cabins/[cabinId]/page.js)
+
+To get data from this dynamic segment, the way this works is that any page or even layout that is associated with a dynamic route segment gets access to the "params" prop. (example: app/cabins/[cabinId]/page.js)
