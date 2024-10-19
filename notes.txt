@@ -66,3 +66,9 @@ In the (app folder => Page.js) file, we can use "fill" property to make image fi
 If we wanna add a Nested Layout to just one part of the site (below one URL segment), we need to create a layout.js file right inside that folder. (example: account folder => layout.js)
 
 This layout.js will be then applied to the page.js (account folder => page.js) that is inside "account" folder. And then just as always all the nested pages inside
+
+# 12. Async and await in server components
+
+They can be directly used not only in the pages, but also in any server components.
+
+Moving data-fetching to its own component, in NextJS it's a good practice to do. We should get used to always have the data-fetching as close as possible to the place that actually needs that data. Because by doing so, we can implement more granular data-fetching strategies.
