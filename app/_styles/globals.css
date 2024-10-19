@@ -28,6 +28,16 @@
       transform: rotate(1turn);
     }
   }
+
+  /* hide scrollbar */
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
 }
 
 /* For data picker */
