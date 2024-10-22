@@ -78,3 +78,15 @@ Moving data-fetching to its own component, in NextJS it's a good practice to do.
 In a folder, we can create a folder with the name of the segment that we wanna use dynamically in the URL. And then we can create a page inside that folder. The name of this folder must be in brackets => [folder_name] (example: app/cabins/[cabinId]/page.js)
 
 To get data from this dynamic segment, the way this works is that any page or even layout that is associated with a dynamic route segment gets access to the "params" prop. (example: app/cabins/[cabinId]/page.js)
+
+# 13. Error Boundary
+
+In NextJS, we can use the "ErrorBoundary" component to catch any errors that might occur in the application. Then convention is to name this file "error.js" in the app folder.
+
+ErrorBoundary must be always client component. (example: app/error.js)
+
+It accepts the error object itself and the function that we can call to reset the ErrorBoundary.
+
+NOTE: only rendering errors will be caught by ErrorBoundary and if some errors occur in the root layout.js it also cannot be caught. If we wanna catch any errors even in the root layout.js, then we need to create a file called "global-error.js".
+
+As with other files like layout.js or loading.js, we can also have multiple ErrorBoundaries even deeper in the application structure.
