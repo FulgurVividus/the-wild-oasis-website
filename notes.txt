@@ -90,3 +90,9 @@ It accepts the error object itself and the function that we can call to reset th
 NOTE: only rendering errors will be caught by ErrorBoundary and if some errors occur in the root layout.js it also cannot be caught. If we wanna catch any errors even in the root layout.js, then we need to create a file called "global-error.js".
 
 As with other files like layout.js or loading.js, we can also have multiple ErrorBoundaries even deeper in the application structure.
+
+# 14. Error Boundary
+
+Not-found in NextJS can be shown in 2 ways:
+-> automatic way, simply if the URL does not exist (example: app/not-found.js)
+-> we can manually trigger the page by calling "not-found" function (example: app/_lib/data-service.js | getCabin function)
