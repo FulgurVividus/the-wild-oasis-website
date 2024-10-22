@@ -35,8 +35,14 @@
     overflow-x: hidden;
   }
   ::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
+    width: 2px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #808080;
+    border-radius: 20px;
   }
 }
 
