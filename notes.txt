@@ -96,3 +96,7 @@ As with other files like layout.js or loading.js, we can also have multiple Erro
 Not-found in NextJS can be shown in 2 ways:
 -> automatic way, simply if the URL does not exist (example: app/not-found.js)
 -> we can manually trigger the page by calling "not-found" function (example: app/_lib/data-service.js | getCabin function)
+
+# 15. Making Dynamic Pages Static with generateStaticParams
+
+generateStaticParams - this is telling NextJS a head of time which params actually exist for current page.
