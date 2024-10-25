@@ -100,3 +100,9 @@ Not-found in NextJS can be shown in 2 ways:
 # 15. Making Dynamic Pages Static with generateStaticParams
 
 generateStaticParams - this is telling NextJS a head of time which params actually exist for current page.
+
+# 16. Sharing State Between Client and Server: The URL
+
+searchParams - is only available on the page. (example: app/cabins/page.js)
+
+useRouter() - allows us to do programmatic navigation between routes in NextJS. (example: app/_components/Filter.js)

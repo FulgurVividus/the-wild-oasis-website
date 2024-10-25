@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import CabinList from "@/app/_components/CabinList";
 import Spinner from "@/app/_components/Spinner";
+import Filter from "@/app/_components/Filter";
 
 // time must be in seconds
 export const revalidate = 3600;
@@ -9,7 +10,9 @@ export const metadata = {
   title: "Cabins",
 };
 
-async function Page() {
+async function Page({ searchParams }) {
+  const filter = searchParams?.capacity ?? "all";
+
   return (
     <>
       <main>
@@ -25,8 +28,12 @@ async function Page() {
           vacation. Welcome to paradise.
         </p>
 
-        <Suspense fallback={<Spinner />}>
-          <CabinList />
+        <div className="flex justify-end mb-8">
+          <Filter />
+        </div>
+
+        <Suspense fallback={<Spinner />} key={filter}>
+          <CabinList filter={filter} />
         </Suspense>
       </main>
     </>
