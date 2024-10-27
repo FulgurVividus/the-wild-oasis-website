@@ -106,3 +106,7 @@ generateStaticParams - this is telling NextJS a head of time which params actual
 searchParams - is only available on the page. (example: app/cabins/page.js)
 
 useRouter() - allows us to do programmatic navigation between routes in NextJS. (example: app/_components/Filter.js)
+
+# 17. Using the Context API for State Management
+
+Context API works only for client components.
