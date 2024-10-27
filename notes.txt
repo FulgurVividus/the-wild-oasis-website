@@ -110,3 +110,15 @@ useRouter() - allows us to do programmatic navigation between routes in NextJS. 
 # 17. Using the Context API for State Management
 
 Context API works only for client components.
+
+# 18. Creating an API Endpoint with Route Handlers
+
+We can create a Router Handler by creating yet another convention file called "route.js".
+
+This file can be in any folder that does not have a "page.js" file yet.
+
+It's important cause when a request is sent to the URL that corresponds to the Route Handler, no HTML is returned. Instead, Route Handler is gonna be executed and then usually returns some JSON data.
+
+If a "page.js" file is already present, that would create a conflict. Because, we cannot send HTML and JSON data at the same time.
+
+(example: app/api/route.js)
