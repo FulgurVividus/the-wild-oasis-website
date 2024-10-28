@@ -2,7 +2,7 @@ import { getBookedDatesByCabinId, getSettings } from "../_lib/data-service";
 import DateSelector from "./DateSelector";
 import ReservationForm from "./ReservationForm";
 
-async function Reservations({ cabin }) {
+async function Reservation({ cabin }) {
   const [settings, bookedDates] = await Promise.all(
     [getSettings()],
     getBookedDatesByCabinId(cabin.id)
@@ -24,4 +24,4 @@ async function Reservations({ cabin }) {
   );
 }
 
-export default Reservations;
+export default Reservation;
