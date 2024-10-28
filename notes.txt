@@ -122,3 +122,8 @@ It's important cause when a request is sent to the URL that corresponds to the R
 If a "page.js" file is already present, that would create a conflict. Because, we cannot send HTML and JSON data at the same time.
 
 (example: app/api/route.js)
+
+# 19. Setting up NextAuth
+
+in app/api/auth/[...nextauth] 
+[...nextauth] - catch all segments mean is that all URLs that start with /api/auth/whatever_we_want will be handled by the route.js file. 
