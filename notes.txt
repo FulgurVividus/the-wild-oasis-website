@@ -127,3 +127,7 @@ If a "page.js" file is already present, that would create a conflict. Because, w
 
 in app/api/auth/[...nextauth] 
 [...nextauth] - catch all segments mean is that all URLs that start with /api/auth/whatever_we_want will be handled by the route.js file. 
+
+# 20. Getting the User Session
+
+referrerPolicy="no-referrer" => it's actually necessary in some situations to correctly display images coming from Google (example: app/_components/Navigation.js)

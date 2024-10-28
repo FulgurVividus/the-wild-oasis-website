@@ -17,3 +17,4 @@ export const {
 } = NextAuth(authConfig);
 
 // auth function - will be called in server components
+// handlers - we use for logging in and signing out
