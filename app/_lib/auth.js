@@ -14,12 +14,18 @@ const authConfig = {
       return !!auth?.user;
     },
   },
+  pages: {
+    signIn: "/login",
+  },
 };
 
 export const {
   auth,
+  signIn,
+  signOut,
   handlers: { GET, POST },
 } = NextAuth(authConfig);
 
-// auth function - will be called in server components
+// auth - will be called in server components (example: to retrieve current session)
 // handlers - we use for logging in and signing out
+// signIn / signOut - will be called when signIn/signOut buttons are clicked.

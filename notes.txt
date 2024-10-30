@@ -131,3 +131,7 @@ in app/api/auth/[...nextauth]
 # 20. Getting the User Session
 
 referrerPolicy="no-referrer" => it's actually necessary in some situations to correctly display images coming from Google (example: app/_components/Navigation.js)
+
+# 21. Server Actions in app/_components/SignInButton.js
+
+Server Actions - they allow us to add interactivity also to server components (usually with forms).
