@@ -135,3 +135,7 @@ referrerPolicy="no-referrer" => it's actually necessary in some situations to co
 # 21. Server Actions in app/_components/SignInButton.js
 
 Server Actions - they allow us to add interactivity also to server components (usually with forms).
+
+# 22. SignOutButton in app/_components/SignOutButton.js
+
+Server Actions - they can even be called from the client, and will still only be executed on the server.
