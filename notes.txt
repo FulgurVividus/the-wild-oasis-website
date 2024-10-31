@@ -139,3 +139,11 @@ Server Actions - they allow us to add interactivity also to server components (u
 # 22. SignOutButton in app/_components/SignOutButton.js
 
 Server Actions - they can even be called from the client, and will still only be executed on the server.
+
+# 22. Server Actions in app/_lib/actions.js
+
+It's a backend development, we always need to make sure of 2 things:
+-> user invoking server action, actually has authorized
+-> need to always treat all the inputs as UNSAFE
+
+It's common practice not use try/catch block in server actions. Just throw an error in the function body.
