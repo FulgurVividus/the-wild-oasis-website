@@ -153,3 +153,14 @@ It's common practice not use try/catch block in server actions. Just throw an er
 useFormStatus is a Hook that gives you status information of the last form submission.
 
 This hook cannot be used in the component including <form>. (example: app/_components/UpdateProfileForm.js)
+
+# 25. The useOptimistic Hook (example: app/_components/ReservationList.js)
+
+Optimistic UI - is a trick and technique that we can use in order to improve the perceived performance of the user interface. 
+
+const [optimistic_state, setter_function] = useOptimistic(actual_state, optimistic_state);
+optimistic_state - is an updating function.
+
+useOptimistic - takes 2 arguments: current state (which is usually rendered on the screen) and state update function (which determines next optimistic state, so it takes current state and some new information that's necessary to compute that optimistic state).
+
+setter_function - triggers the optimistic operation.
