@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Wild Oasis Website 🌴⛱️
 
-## Getting Started
+## Overview 👍
 
-First, run the development server:
+The Wild Oasis Website is a full-stack application designed to serve as the client-facing platform for booking management at The Wild Oasis hotel. It complements the staff-focused application by providing customers with the ability to create, update, read, and delete their bookings. This platform showcases advanced web development techniques with a focus on performance and streamlined user interactions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used 🛠️
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: Leveraging the "App" Router for efficient routing and navigation.
+- **React Server Components**: For server-rendered components, optimizing loading times and performance.
+- **Server Actions**: Enabling direct server interactions within the Next.js environment.
+- **NextAuth**: Handling secure user authentication and session management.
+- **Context API**: Managing global state across the app.
+- **JavaScript**: Core logic and interactivity.
+- **Tailwind CSS**: Styling framework for building a consistent and modern user interface.
+- **PostgreSQL**: Database management system for structured booking data.
+- **Supabase**: Backend as a service, providing database and authentication functionalities.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Features 🐦‍🔥
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Booking Management**: Clients can create, view, update, and delete their hotel bookings.
+- **Authentication**: User authentication is managed through NextAuth (Auth.js), ensuring secure access to booking data.
+- **Context-Based State Management**: Ensures smooth data handling across components, improving user experience.
 
-## Learn More
+## Design 👨‍🎨
 
-To learn more about Next.js, take a look at the following resources:
+- **Desktop-Focused**: This version is optimized for desktop use and is currently not mobile-friendly.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Getting Started 🏃‍♂️
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To set up The Wild Oasis Website locally:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone this repository.
+2. Install dependencies by running `npm install`.
+3. Configure environment variables for Supabase and NextAuth.
+4. Start the development server with `npm run dev`.
+5. Access the app at `http://localhost:3000`.
+6. Or go via the link in the "About" section.
