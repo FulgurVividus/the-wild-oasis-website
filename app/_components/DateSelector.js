@@ -41,7 +41,7 @@ function DateSelector({ settings, bookedDates, cabin }) {
           today: `text-accent-400`,
         }}
         mode="range"
-        onSelect={(range) => setRange(range)}
+        onSelect={setRange}
         selected={displayRange}
         min={minBookingLength + 1}
         max={maxBookingLength}
