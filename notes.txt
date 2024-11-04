@@ -164,3 +164,7 @@ optimistic_state - is an updating function.
 useOptimistic - takes 2 arguments: current state (which is usually rendered on the screen) and state update function (which determines next optimistic state, so it takes current state and some new information that's necessary to compute that optimistic state).
 
 setter_function - triggers the optimistic operation.
+
+# 26. Sending data from form to action (example: app/_components/ReservationForm.js and app/_lib/actions.js)
+
+createBookingAction function - in these kinda functions, when we bind the action to the form, make sure that "formData" always comes last.
